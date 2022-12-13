@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-listado-clientes',
@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class ListadoClientesComponent {
 
+  @Input() datosCliente: any;
+
+  constructor() {}
+
+  //ngOnInit(): void {
+
+  //}
 }
