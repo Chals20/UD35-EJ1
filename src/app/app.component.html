@@ -1,16 +1,21 @@
 <h1>Alta Cliente</h1>
-<div>
-  Nombre:<input type="text" [(ngModel)]="nombre">
+<div class="clientes">
+  Nombre:
+  <input type="text" [(ngModel)]="nombre">
   <br>
-  CIF:<input type="text" [(ngModel)]="cif">
+  CIF:
+  <input type="text" [(ngModel)]="cif">
   <br>
-  Dirección:<input type="text" [(ngModel)]="direccion">
+  Dirección:
+  <input type="text" [(ngModel)]="direccion">
   <br>
-  Grupo:<select [(ngModel)]="grupo">
+  Grupo:
+  <select [(ngModel)]="grupo">
     <option value=0>0</option>
     <option value=1>1</option>
     <option value=2>2</option>
   </select>
+  <br>
   <br>
   <button (click)="anadirCliente()">Guardar</button>
 
